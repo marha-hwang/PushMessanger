@@ -8,15 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		83D6054F2D3527F600BFCE9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6054E2D3527F600BFCE9E /* AppDelegate.swift */; };
-		83D605512D3527F600BFCE9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605502D3527F600BFCE9E /* SceneDelegate.swift */; };
-		83D605532D3527F600BFCE9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605522D3527F600BFCE9E /* ViewController.swift */; };
-		83D605562D3527F600BFCE9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D605542D3527F600BFCE9E /* Main.storyboard */; };
+		83D605532D3527F600BFCE9E /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605522D3527F600BFCE9E /* MessageListViewController.swift */; };
 		83D605592D3527F600BFCE9E /* PushMessenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83D605572D3527F600BFCE9E /* PushMessenger.xcdatamodeld */; };
 		83D6055B2D3527F700BFCE9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D6055A2D3527F700BFCE9E /* Assets.xcassets */; };
 		83D6055E2D3527F700BFCE9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D6055C2D3527F700BFCE9E /* LaunchScreen.storyboard */; };
 		83D605692D3527F700BFCE9E /* PushMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605682D3527F700BFCE9E /* PushMessengerTests.swift */; };
 		83D605732D3527F700BFCE9E /* PushMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605722D3527F700BFCE9E /* PushMessengerUITests.swift */; };
 		83D605752D3527F700BFCE9E /* PushMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605742D3527F700BFCE9E /* PushMessengerUITestsLaunchTests.swift */; };
+		83D605882D35299B00BFCE9E /* MessageSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605872D35299B00BFCE9E /* MessageSceneDIContainer.swift */; };
+		83D6058A2D3529AA00BFCE9E /* SettingSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605892D3529AA00BFCE9E /* SettingSceneDIContainer.swift */; };
+		83D6058C2D3529CA00BFCE9E /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6058B2D3529CA00BFCE9E /* AppFlowCoordinator.swift */; };
+		83D6058E2D3529E700BFCE9E /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6058D2D3529E700BFCE9E /* AppConfigurations.swift */; };
+		83D605912D352A3300BFCE9E /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605902D352A3300BFCE9E /* StoryboardInstantiable.swift */; };
+		83D605952D352B2C00BFCE9E /* MessageFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605942D352B2C00BFCE9E /* MessageFlowCoordinator.swift */; };
+		83D605972D352B3B00BFCE9E /* SettingFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605962D352B3B00BFCE9E /* SettingFlowCoordinator.swift */; };
+		83D6059D2D352C6000BFCE9E /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6059C2D352C6000BFCE9E /* AppDIContainer.swift */; };
+		83D605A02D352D7A00BFCE9E /* LoginSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6059F2D352D7A00BFCE9E /* LoginSceneDIContainer.swift */; };
+		83D605A22D352E1500BFCE9E /* LoginFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605A12D352E1500BFCE9E /* LoginFlowCoordinator.swift */; };
+		83D605A52D352F6400BFCE9E /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605A42D352F6400BFCE9E /* CustomTabBarController.swift */; };
+		83D605A92D352FFB00BFCE9E /* UIColor+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605A82D352FFB00BFCE9E /* UIColor+init.swift */; };
+		83D605B02D3532C900BFCE9E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605AF2D3532C900BFCE9E /* LoginViewController.swift */; };
+		83D605B22D3532D700BFCE9E /* LockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605B12D3532D700BFCE9E /* LockViewController.swift */; };
+		83D605B42D35349800BFCE9E /* MessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605B32D35349800BFCE9E /* MessageListViewModel.swift */; };
+		83D605B62D35369A00BFCE9E /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605B52D35369A00BFCE9E /* MessageDetailViewController.swift */; };
+		83D605B82D3536A800BFCE9E /* MessageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605B72D3536A800BFCE9E /* MessageDetailViewModel.swift */; };
+		83D605BB2D353D7900BFCE9E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605BA2D353D7900BFCE9E /* LoginViewModel.swift */; };
+		83D605BD2D353D8400BFCE9E /* LockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605BC2D353D8400BFCE9E /* LockViewModel.swift */; };
+		83D605BF2D35544800BFCE9E /* UIStackView+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605BE2D35544800BFCE9E /* UIStackView+init.swift */; };
+		83D605C32D3554B000BFCE9E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 83D605C22D3554B000BFCE9E /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +58,7 @@
 /* Begin PBXFileReference section */
 		83D6054B2D3527F600BFCE9E /* PushMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D6054E2D3527F600BFCE9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83D605502D3527F600BFCE9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83D605522D3527F600BFCE9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83D605552D3527F600BFCE9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83D605522D3527F600BFCE9E /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
 		83D605582D3527F600BFCE9E /* PushMessenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PushMessenger.xcdatamodel; sourceTree = "<group>"; };
 		83D6055A2D3527F700BFCE9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D6055D2D3527F700BFCE9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +68,26 @@
 		83D6056E2D3527F700BFCE9E /* PushMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D605722D3527F700BFCE9E /* PushMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushMessengerUITests.swift; sourceTree = "<group>"; };
 		83D605742D3527F700BFCE9E /* PushMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83D605872D35299B00BFCE9E /* MessageSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSceneDIContainer.swift; sourceTree = "<group>"; };
+		83D605892D3529AA00BFCE9E /* SettingSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSceneDIContainer.swift; sourceTree = "<group>"; };
+		83D6058B2D3529CA00BFCE9E /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		83D6058D2D3529E700BFCE9E /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
+		83D605902D352A3300BFCE9E /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		83D605942D352B2C00BFCE9E /* MessageFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFlowCoordinator.swift; sourceTree = "<group>"; };
+		83D605962D352B3B00BFCE9E /* SettingFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingFlowCoordinator.swift; sourceTree = "<group>"; };
+		83D6059C2D352C6000BFCE9E /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		83D6059F2D352D7A00BFCE9E /* LoginSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneDIContainer.swift; sourceTree = "<group>"; };
+		83D605A12D352E1500BFCE9E /* LoginFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowCoordinator.swift; sourceTree = "<group>"; };
+		83D605A42D352F6400BFCE9E /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		83D605A82D352FFB00BFCE9E /* UIColor+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+init.swift"; sourceTree = "<group>"; };
+		83D605AF2D3532C900BFCE9E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		83D605B12D3532D700BFCE9E /* LockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewController.swift; sourceTree = "<group>"; };
+		83D605B32D35349800BFCE9E /* MessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewModel.swift; sourceTree = "<group>"; };
+		83D605B52D35369A00BFCE9E /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
+		83D605B72D3536A800BFCE9E /* MessageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewModel.swift; sourceTree = "<group>"; };
+		83D605BA2D353D7900BFCE9E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		83D605BC2D353D8400BFCE9E /* LockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewModel.swift; sourceTree = "<group>"; };
+		83D605BE2D35544800BFCE9E /* UIStackView+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+init.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D605C32D3554B000BFCE9E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +123,7 @@
 				83D605672D3527F700BFCE9E /* PushMessengerTests */,
 				83D605712D3527F700BFCE9E /* PushMessengerUITests */,
 				83D6054C2D3527F600BFCE9E /* Products */,
+				83D605C12D3554B000BFCE9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +140,11 @@
 		83D6054D2D3527F600BFCE9E /* PushMessenger */ = {
 			isa = PBXGroup;
 			children = (
-				83D6054E2D3527F600BFCE9E /* AppDelegate.swift */,
-				83D605502D3527F600BFCE9E /* SceneDelegate.swift */,
-				83D605522D3527F600BFCE9E /* ViewController.swift */,
-				83D605542D3527F600BFCE9E /* Main.storyboard */,
-				83D6055A2D3527F700BFCE9E /* Assets.xcassets */,
-				83D6055C2D3527F700BFCE9E /* LaunchScreen.storyboard */,
-				83D6055F2D3527F700BFCE9E /* Info.plist */,
-				83D605572D3527F600BFCE9E /* PushMessenger.xcdatamodeld */,
+				83D605842D35283100BFCE9E /* Application */,
+				83D605832D35282A00BFCE9E /* Presentation */,
+				83D605822D35282300BFCE9E /* Domain */,
+				83D605812D35281A00BFCE9E /* Data */,
+				83D605852D35283900BFCE9E /* Resource */,
 			);
 			path = PushMessenger;
 			sourceTree = "<group>";
@@ -130,6 +166,186 @@
 			path = PushMessengerUITests;
 			sourceTree = "<group>";
 		};
+		83D605812D35281A00BFCE9E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				83D605572D3527F600BFCE9E /* PushMessenger.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		83D605822D35282300BFCE9E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		83D605832D35282A00BFCE9E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				83D6059E2D352D6200BFCE9E /* LoginScene */,
+				83D605932D352AB000BFCE9E /* MessageScene */,
+				83D605922D352AA500BFCE9E /* SettingScene */,
+				83D6058F2D352A1200BFCE9E /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		83D605842D35283100BFCE9E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				83D6054E2D3527F600BFCE9E /* AppDelegate.swift */,
+				83D6058B2D3529CA00BFCE9E /* AppFlowCoordinator.swift */,
+				83D6058D2D3529E700BFCE9E /* AppConfigurations.swift */,
+				83D605862D35291200BFCE9E /* DIContainer */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		83D605852D35283900BFCE9E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				83D6055F2D3527F700BFCE9E /* Info.plist */,
+				83D6055A2D3527F700BFCE9E /* Assets.xcassets */,
+				83D6055C2D3527F700BFCE9E /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		83D605862D35291200BFCE9E /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				83D6059C2D352C6000BFCE9E /* AppDIContainer.swift */,
+				83D6059F2D352D7A00BFCE9E /* LoginSceneDIContainer.swift */,
+				83D605872D35299B00BFCE9E /* MessageSceneDIContainer.swift */,
+				83D605892D3529AA00BFCE9E /* SettingSceneDIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		83D6058F2D352A1200BFCE9E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				83D605A72D352FE100BFCE9E /* Extension */,
+				83D605A62D352F6E00BFCE9E /* Protocol */,
+				83D605A32D352F4300BFCE9E /* Inheritances */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		83D605922D352AA500BFCE9E /* SettingScene */ = {
+			isa = PBXGroup;
+			children = (
+				83D605962D352B3B00BFCE9E /* SettingFlowCoordinator.swift */,
+				83D6059B2D352BA600BFCE9E /* ScreenLock */,
+				83D6059A2D352B9800BFCE9E /* SettingMain */,
+			);
+			path = SettingScene;
+			sourceTree = "<group>";
+		};
+		83D605932D352AB000BFCE9E /* MessageScene */ = {
+			isa = PBXGroup;
+			children = (
+				83D605942D352B2C00BFCE9E /* MessageFlowCoordinator.swift */,
+				83D605982D352B4700BFCE9E /* MessageList */,
+				83D605992D352B6200BFCE9E /* MessageDetail */,
+			);
+			path = MessageScene;
+			sourceTree = "<group>";
+		};
+		83D605982D352B4700BFCE9E /* MessageList */ = {
+			isa = PBXGroup;
+			children = (
+				83D605522D3527F600BFCE9E /* MessageListViewController.swift */,
+				83D605B32D35349800BFCE9E /* MessageListViewModel.swift */,
+			);
+			path = MessageList;
+			sourceTree = "<group>";
+		};
+		83D605992D352B6200BFCE9E /* MessageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				83D605B52D35369A00BFCE9E /* MessageDetailViewController.swift */,
+				83D605B72D3536A800BFCE9E /* MessageDetailViewModel.swift */,
+			);
+			path = MessageDetail;
+			sourceTree = "<group>";
+		};
+		83D6059A2D352B9800BFCE9E /* SettingMain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingMain;
+			sourceTree = "<group>";
+		};
+		83D6059B2D352BA600BFCE9E /* ScreenLock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScreenLock;
+			sourceTree = "<group>";
+		};
+		83D6059E2D352D6200BFCE9E /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				83D605A12D352E1500BFCE9E /* LoginFlowCoordinator.swift */,
+				83D605AC2D35326900BFCE9E /* Login */,
+				83D605AD2D35327400BFCE9E /* Lock */,
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		83D605A32D352F4300BFCE9E /* Inheritances */ = {
+			isa = PBXGroup;
+			children = (
+				83D605A42D352F6400BFCE9E /* CustomTabBarController.swift */,
+			);
+			path = Inheritances;
+			sourceTree = "<group>";
+		};
+		83D605A62D352F6E00BFCE9E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				83D605902D352A3300BFCE9E /* StoryboardInstantiable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		83D605A72D352FE100BFCE9E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				83D605A82D352FFB00BFCE9E /* UIColor+init.swift */,
+				83D605BE2D35544800BFCE9E /* UIStackView+init.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		83D605AC2D35326900BFCE9E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				83D605AF2D3532C900BFCE9E /* LoginViewController.swift */,
+				83D605BA2D353D7900BFCE9E /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		83D605AD2D35327400BFCE9E /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				83D605B12D3532D700BFCE9E /* LockViewController.swift */,
+				83D605BC2D353D8400BFCE9E /* LockViewModel.swift */,
+			);
+			path = Lock;
+			sourceTree = "<group>";
+		};
+		83D605C12D3554B000BFCE9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +362,9 @@
 			dependencies = (
 			);
 			name = PushMessenger;
+			packageProductDependencies = (
+				83D605C22D3554B000BFCE9E /* SnapKit */,
+			);
 			productName = PushMessenger;
 			productReference = 83D6054B2D3527F600BFCE9E /* PushMessenger.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +437,9 @@
 				Base,
 			);
 			mainGroup = 83D605422D3527F600BFCE9E;
+			packageReferences = (
+				83D605C02D35548400BFCE9E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 83D6054C2D3527F600BFCE9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +458,6 @@
 			files = (
 				83D6055E2D3527F700BFCE9E /* LaunchScreen.storyboard in Resources */,
 				83D6055B2D3527F700BFCE9E /* Assets.xcassets in Resources */,
-				83D605562D3527F600BFCE9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +482,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83D605532D3527F600BFCE9E /* ViewController.swift in Sources */,
+				83D6059D2D352C6000BFCE9E /* AppDIContainer.swift in Sources */,
+				83D605B22D3532D700BFCE9E /* LockViewController.swift in Sources */,
+				83D605BD2D353D8400BFCE9E /* LockViewModel.swift in Sources */,
+				83D605952D352B2C00BFCE9E /* MessageFlowCoordinator.swift in Sources */,
+				83D605532D3527F600BFCE9E /* MessageListViewController.swift in Sources */,
 				83D6054F2D3527F600BFCE9E /* AppDelegate.swift in Sources */,
-				83D605512D3527F600BFCE9E /* SceneDelegate.swift in Sources */,
+				83D605B62D35369A00BFCE9E /* MessageDetailViewController.swift in Sources */,
 				83D605592D3527F600BFCE9E /* PushMessenger.xcdatamodeld in Sources */,
+				83D605A02D352D7A00BFCE9E /* LoginSceneDIContainer.swift in Sources */,
+				83D605882D35299B00BFCE9E /* MessageSceneDIContainer.swift in Sources */,
+				83D605972D352B3B00BFCE9E /* SettingFlowCoordinator.swift in Sources */,
+				83D605A52D352F6400BFCE9E /* CustomTabBarController.swift in Sources */,
+				83D6058C2D3529CA00BFCE9E /* AppFlowCoordinator.swift in Sources */,
+				83D605A22D352E1500BFCE9E /* LoginFlowCoordinator.swift in Sources */,
+				83D6058A2D3529AA00BFCE9E /* SettingSceneDIContainer.swift in Sources */,
+				83D605B02D3532C900BFCE9E /* LoginViewController.swift in Sources */,
+				83D605B42D35349800BFCE9E /* MessageListViewModel.swift in Sources */,
+				83D605912D352A3300BFCE9E /* StoryboardInstantiable.swift in Sources */,
+				83D6058E2D3529E700BFCE9E /* AppConfigurations.swift in Sources */,
+				83D605A92D352FFB00BFCE9E /* UIColor+init.swift in Sources */,
+				83D605B82D3536A800BFCE9E /* MessageDetailViewModel.swift in Sources */,
+				83D605BB2D353D7900BFCE9E /* LoginViewModel.swift in Sources */,
+				83D605BF2D35544800BFCE9E /* UIStackView+init.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +541,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		83D605542D3527F600BFCE9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83D605552D3527F600BFCE9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83D6055C2D3527F700BFCE9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,12 +680,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TV24D3P64X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PushMessenger/Info.plist;
+				INFOPLIST_FILE = PushMessenger/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,12 +709,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TV24D3P64X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PushMessenger/Info.plist;
+				INFOPLIST_FILE = PushMessenger/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,6 +845,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83D605C02D35548400BFCE9E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83D605C22D3554B000BFCE9E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83D605C02D35548400BFCE9E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		83D605572D3527F600BFCE9E /* PushMessenger.xcdatamodeld */ = {
