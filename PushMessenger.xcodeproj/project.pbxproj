@@ -36,6 +36,9 @@
 		83D605BD2D353D8400BFCE9E /* LockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605BC2D353D8400BFCE9E /* LockViewModel.swift */; };
 		83D605BF2D35544800BFCE9E /* UIStackView+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605BE2D35544800BFCE9E /* UIStackView+init.swift */; };
 		83D605C32D3554B000BFCE9E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 83D605C22D3554B000BFCE9E /* SnapKit */; };
+		BCCDB16C2D35F62F0094661E /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCDB16B2D35F62F0094661E /* Design.swift */; };
+		BCCDB16E2D35F7490094661E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BCCDB16D2D35F7490094661E /* Localizable.xcstrings */; };
+		BCCDB1702D35FA3E0094661E /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCDB16F2D35FA3E0094661E /* String+localized.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 		83D605BA2D353D7900BFCE9E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		83D605BC2D353D8400BFCE9E /* LockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewModel.swift; sourceTree = "<group>"; };
 		83D605BE2D35544800BFCE9E /* UIStackView+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+init.swift"; sourceTree = "<group>"; };
+		BCCDB16B2D35F62F0094661E /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		BCCDB16D2D35F7490094661E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		BCCDB16F2D35FA3E0094661E /* String+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +215,8 @@
 				83D6055F2D3527F700BFCE9E /* Info.plist */,
 				83D6055A2D3527F700BFCE9E /* Assets.xcassets */,
 				83D6055C2D3527F700BFCE9E /* LaunchScreen.storyboard */,
+				BCCDB16B2D35F62F0094661E /* Design.swift */,
+				BCCDB16D2D35F7490094661E /* Localizable.xcstrings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -317,6 +325,7 @@
 			children = (
 				83D605A82D352FFB00BFCE9E /* UIColor+init.swift */,
 				83D605BE2D35544800BFCE9E /* UIStackView+init.swift */,
+				BCCDB16F2D35FA3E0094661E /* String+localized.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -435,6 +444,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 83D605422D3527F600BFCE9E;
 			packageReferences = (
@@ -458,6 +468,7 @@
 			files = (
 				83D6055E2D3527F700BFCE9E /* LaunchScreen.storyboard in Resources */,
 				83D6055B2D3527F700BFCE9E /* Assets.xcassets in Resources */,
+				BCCDB16E2D35F7490094661E /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +502,7 @@
 				83D605B62D35369A00BFCE9E /* MessageDetailViewController.swift in Sources */,
 				83D605592D3527F600BFCE9E /* PushMessenger.xcdatamodeld in Sources */,
 				83D605A02D352D7A00BFCE9E /* LoginSceneDIContainer.swift in Sources */,
+				BCCDB16C2D35F62F0094661E /* Design.swift in Sources */,
 				83D605882D35299B00BFCE9E /* MessageSceneDIContainer.swift in Sources */,
 				83D605972D352B3B00BFCE9E /* SettingFlowCoordinator.swift in Sources */,
 				83D605A52D352F6400BFCE9E /* CustomTabBarController.swift in Sources */,
@@ -498,6 +510,7 @@
 				83D605A22D352E1500BFCE9E /* LoginFlowCoordinator.swift in Sources */,
 				83D6058A2D3529AA00BFCE9E /* SettingSceneDIContainer.swift in Sources */,
 				83D605B02D3532C900BFCE9E /* LoginViewController.swift in Sources */,
+				BCCDB1702D35FA3E0094661E /* String+localized.swift in Sources */,
 				83D605B42D35349800BFCE9E /* MessageListViewModel.swift in Sources */,
 				83D605912D352A3300BFCE9E /* StoryboardInstantiable.swift in Sources */,
 				83D6058E2D3529E700BFCE9E /* AppConfigurations.swift in Sources */,
