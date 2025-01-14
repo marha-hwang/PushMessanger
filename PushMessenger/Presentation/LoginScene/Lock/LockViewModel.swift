@@ -11,6 +11,7 @@ struct LockViewModelActions{
 }
 
 protocol LockViewModelInput{
+    func confirmPassword(input:String)
 }
 
 protocol LockViewModelOutput{
@@ -19,4 +20,18 @@ protocol LockViewModelOutput{
 typealias LockViewModel = LockViewModelInput&LockViewModelOutput
 
 final class DefaultLockViewModel:LockViewModel{
+    
+    private let actions:LockViewModelActions
+    
+    init(actions: LockViewModelActions) {
+        self.actions = actions
+    }
+    
+    func confirmPassword(input: String) {
+        let password = "0000"
+        
+        if input == password{
+            actions.showMessageList()
+        }
+    }
 }

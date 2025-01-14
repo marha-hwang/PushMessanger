@@ -20,12 +20,16 @@ final class LoginSceneDIContainer:LoginFlowCoordinatorDependencies{
         DefaultLoginViewModel(actions: action)
     }
     
+    func makeLockViewModel(action:LockViewModelActions)->LockViewModel{
+        DefaultLockViewModel(actions: action)
+    }
+    
     func makeLoginViewController(actions: LoginViewModelActions) -> LoginViewController {
         LoginViewController.create(with: makeLoginViewModel(action: actions))
     }
     
     func makeLockViewController(actions: LockViewModelActions) -> LockViewController {
-        LockViewController.create()
+        LockViewController.create(with: makeLockViewModel(action: actions))
     }
     
     func makeLoginFlowCoordinator(navigationController: UINavigationController) -> LoginFlowCoordinator {
