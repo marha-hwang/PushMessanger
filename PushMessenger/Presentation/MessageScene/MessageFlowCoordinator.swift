@@ -13,8 +13,16 @@ protocol MessageFlowCoordinatorDependencies  {
     func makeMessageDetailViewController(actions: MessageDetailViewModelActions) -> MessageDetailViewController
 }
 
+enum MessageType{
+    case notice
+    case emergency
+}
+
 final class MessageFlowCoordinator{
     private weak var navigationController: UINavigationController?
+    private var noticeNav: UINavigationController = UINavigationController()
+    private var EmergencyNav: UINavigationController = UINavigationController()
+
     private let dependencies: MessageFlowCoordinatorDependencies
 
     init(navigationController: UINavigationController,
@@ -24,15 +32,13 @@ final class MessageFlowCoordinator{
     }
     
     func start() {
-        let noticeNav = UINavigationController()
-        let EmergencyNav = UINavigationController()
         
         let tabbar = CustomTabBarController()
         tabbar.setViewControllers([noticeNav, EmergencyNav], animated: false)
         noticeNav.tabBarItem = UITabBarItem(title: "Notice", image: UIImage(systemName: "menucard"), selectedImage: UIImage(systemName: "menucard.fill"))
         EmergencyNav.tabBarItem = UITabBarItem(title: "Emergency", image: UIImage(systemName: "bookmark"), selectedImage: UIImage(systemName: "bookmark.fill"))
                 
-        let actions = MessageListViewModelActions(showMessageDetail: showMessageDetail)
+        let actions = MessageListViewModelActions(showMessageDetail: showMessageDetail(messageType:))
         let noticeVC = dependencies.makeMessageListViewController(actions: actions)
         let emergencyVC = dependencies.makeMessageListViewController(actions: actions)
         noticeNav.pushViewController(noticeVC, animated: false)
@@ -41,11 +47,16 @@ final class MessageFlowCoordinator{
         navigationController?.pushViewController(tabbar, animated: false)
     }
     
-    func showMessageDetail()->Void{
+    func showMessageDetail(messageType:MessageType)->Void{
         let actions = MessageDetailViewModelActions()
         
         let vc = dependencies.makeMessageDetailViewController(actions: actions)
         
-        navigationController?.pushViewController(vc, animated: false)
+        if messageType == .notice{
+            noticeNav.pushViewController(vc, animated: false)    
+        }
+        else if messageType == .emergency{
+            EmergencyNav.pushViewController(vc, animated: false)
+        }
     }
 }

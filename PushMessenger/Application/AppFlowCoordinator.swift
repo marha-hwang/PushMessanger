@@ -31,9 +31,7 @@ final class AppFlowCoordinator {
         }
     }
     
-    private func moveLogin(){
-        navigationController.isNavigationBarHidden = true
-        
+    private func moveLogin(){        
         let loginSceneDIContainer = appDIContainer.makeLoginSceneDIContainer(
             messageFlowCoordinator: appDIContainer.makeMessageSceneDIContainer().makeMessageFlowCoordinator(navigationController: navigationController)
         )
@@ -42,9 +40,7 @@ final class AppFlowCoordinator {
         loginFlow.start()
     }
     
-    private func moveMain(){
-        navigationController.isNavigationBarHidden = true
-        
+    private func moveMain(){        
         let messageSceneDIContainer = appDIContainer.makeMessageSceneDIContainer()
         let messageFlow = messageSceneDIContainer.makeMessageFlowCoordinator(navigationController: navigationController)
         messageFlow.start()

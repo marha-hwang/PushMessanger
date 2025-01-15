@@ -9,8 +9,13 @@ import Foundation
 import UIKit
 
 final class MessageSceneDIContainer:MessageFlowCoordinatorDependencies{
+    
+    func makeMesssageListViewModel(action:MessageListViewModelActions)->MessageListViewModel{
+        DefaultMessageListViewModel(actions: action)
+    }
+    
     func makeMessageListViewController(actions: MessageListViewModelActions) -> MessageListViewController {
-        MessageListViewController.create()
+        MessageListViewController.create(with: makeMesssageListViewModel(action: actions))
     }
     
     func makeMessageDetailViewController(actions: MessageDetailViewModelActions) -> MessageDetailViewController {
