@@ -19,9 +19,13 @@ class MessageListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        navigationItem.hidesBackButton = true  
-        navigationItem.title = "notice_notification".localized()
+                
+        if viewModel.messageType == .notice{
+            navigationItem.title = "notice_notification".localized()   
+        }
+        else if viewModel.messageType == .emergency{
+            navigationItem.title = "emergency_notification".localized()
+        }
         
         view.backgroundColor = Design.commonColor
         
@@ -37,6 +41,22 @@ class MessageListViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
         
+        
+        //네비게이션 관련 임시코드
+//        let image = UIImage(systemName: "arrowshape.backward.fill")
+//        image?.withTintColor(.black)
+//        navi.backIndicatorImage = UIImage()
+//        navigationBar.backIndicatorTransitionMaskImage = UIImage()
+//        
+//        let backButton = UIBarButtonItem()
+//        backButton.image = image
+//        backButton.tintColor = .black
+//        navigationItem.backBarButtonItem = backButton
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tabBarController?.tabBar.isHidden = false
     }
     
     @objc func dismissKeyboard() {

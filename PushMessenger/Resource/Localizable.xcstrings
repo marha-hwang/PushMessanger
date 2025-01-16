@@ -9,6 +9,12 @@
             "state" : "translated",
             "value" : "Emaergency Notification"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상알림"
+          }
         }
       }
     },

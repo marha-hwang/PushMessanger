@@ -16,18 +16,19 @@ protocol MessageListViewModelInput{
 }
 
 protocol MessageListViewModelOutput{
-    var messageType:MessageType { get set }
+    var messageType:MessageType { get }
 }
 
 typealias MessageListViewModel = MessageListViewModelInput&MessageListViewModelOutput
 
 final class DefaultMessageListViewModel:MessageListViewModel{
     
-    var messageType: MessageType = .notice
-    
     private let actions:MessageListViewModelActions?
     
-    init(actions: MessageListViewModelActions?) {
+    var messageType: MessageType
+    
+    init(messageType: MessageType, actions: MessageListViewModelActions?) {
+        self.messageType = messageType
         self.actions = actions
     }
     
