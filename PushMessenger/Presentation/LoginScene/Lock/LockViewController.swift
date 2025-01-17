@@ -194,11 +194,3 @@ class LockImageView:UIImageView{
         image = UIImage(systemName: "lock.circle.fill")
     }
 }
-
-struct PreView: PreviewProvider {
-    static var previews: some View {
-        let messageDI = MessageSceneDIContainer()
-        let loginDI = LoginSceneDIContainer(messageFlowCoordinator: messageDI.makeMessageFlowCoordinator(navigationController: UINavigationController()))
-        loginDI.makeLockViewController(actions: LockViewModelActions(showMessageList: {})).toPreview()
-    }
-}

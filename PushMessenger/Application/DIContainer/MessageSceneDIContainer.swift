@@ -18,13 +18,18 @@ final class MessageSceneDIContainer:MessageFlowCoordinatorDependencies{
         MessageListViewController.create(with: makeMesssageListViewModel(messageType: messageType,action: actions))
     }
     
-    func makeMessageDetailViewController(actions: MessageDetailViewModelActions) -> MessageDetailViewController {
+    func makeMessageDetailViewController(message:Message,actions: MessageDetailViewModelActions) -> MessageDetailViewController {
         MessageDetailViewController.create()
     }
     
     func makeMessageFlowCoordinator(navigationController: UINavigationController) -> MessageFlowCoordinator {
-        MessageFlowCoordinator(
+        
+        let settingDIContainer = SettingSceneDIContainer()
+        let settingCoordinator = settingDIContainer.makeSettingFlowCoordinator(navigationController: navigationController)
+        
+        return MessageFlowCoordinator(
             navigationController: navigationController,
+            settingFlowCoordinator: settingCoordinator,
             dependencies: self
         )
     }

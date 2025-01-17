@@ -8,7 +8,7 @@
 import Foundation
 final class AppDIContainer{
     func makeLoginSceneDIContainer(messageFlowCoordinator:MessageFlowCoordinator) -> LoginSceneDIContainer {
-        LoginSceneDIContainer(messageFlowCoordinator: messageFlowCoordinator)
+        LoginSceneDIContainer()
     }
     
     func makeMessageSceneDIContainer() -> MessageSceneDIContainer {

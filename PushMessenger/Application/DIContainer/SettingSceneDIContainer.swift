@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import UIKit
+
+final class SettingSceneDIContainer:SettingFlowCoordinatorDependencies{
+    
+    func makeSettingMainViewController() -> SettingMainViewController {
+        SettingMainViewController.create()
+    }
+    
+    func makeSettingFlowCoordinator(navigationController: UINavigationController) -> SettingFlowCoordinator {
+        SettingFlowCoordinator(
+            navigationController: navigationController,
+            dependencies: self
+        )
+    }
+    
+    
+}

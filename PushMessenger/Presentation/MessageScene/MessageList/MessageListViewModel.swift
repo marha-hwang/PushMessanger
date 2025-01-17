@@ -8,7 +8,7 @@
 import Foundation
 
 struct MessageListViewModelActions{
-    let showMessageDetail:(MessageType)->Void
+    let showMessageDetail:(Message)->Void
 }
 
 protocol MessageListViewModelInput{
@@ -33,6 +33,6 @@ final class DefaultMessageListViewModel:MessageListViewModel{
     }
     
     func showDetail() {
-        actions?.showMessageDetail(messageType)
+        actions?.showMessageDetail(Message())
     }
 }

@@ -46,7 +46,6 @@ final class LoginFlowCoordinator{
          다른 coordinator로 자연스럽게 넘어가는 법은?
          하위 코디네이터를 상위코디네이터에서 생성자 인자로 받아서 활용하는 것이 좋을 것 같음
          */
-        navigationController?.isNavigationBarHidden = true
         messageFlowCoordinator.start()
     }
 

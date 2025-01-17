@@ -10,12 +10,6 @@ import UIKit
 
 final class LoginSceneDIContainer:LoginFlowCoordinatorDependencies{
     
-    private let messageFlowCoordinator:MessageFlowCoordinator
-    
-    init(messageFlowCoordinator: MessageFlowCoordinator) {
-        self.messageFlowCoordinator = messageFlowCoordinator
-    }
-    
     func makeLoginViewModel(action:LoginViewModelActions)->LoginViewModel{
         DefaultLoginViewModel(actions: action)
     }
@@ -33,7 +27,11 @@ final class LoginSceneDIContainer:LoginFlowCoordinatorDependencies{
     }
     
     func makeLoginFlowCoordinator(navigationController: UINavigationController) -> LoginFlowCoordinator {
-        LoginFlowCoordinator(
+        
+        let messageDIContainer = MessageSceneDIContainer()
+        let messageFlowCoordinator = messageDIContainer.makeMessageFlowCoordinator(navigationController: navigationController)
+        
+        return LoginFlowCoordinator(
             navigationController: navigationController,
             messageFlowCoordinator: messageFlowCoordinator,
             dependencies: self

@@ -1,30 +1,29 @@
 //
-//  MessageDetailViewController.swift
+//  ScreenLockViewController.swift
 //  PushMessenger
 //
-//  Created by haram on 1/13/25.
+//  Created by h2o on 2025/01/17.
 //
 
+import Foundation
 import UIKit
 
-class MessageDetailViewController: UIViewController {
+class ScreenLockViewController: UIViewController {
 
-    static func create() -> MessageDetailViewController {
-        let vc = MessageDetailViewController()
+    static func create() -> ScreenLockViewController {
+            let vc = ScreenLockViewController()
         return vc
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupNavigationItem()
-        
+                
         view.backgroundColor = Design.commonColor
         
         let outer:UIStackView = {
             let outer = UIStackView(axis: .vertical, distribution: .equalSpacing, alignment: .center)
             
-            outer.backgroundColor = .yellow
+            outer.backgroundColor = .red
             
             return outer
         }()
@@ -35,9 +34,6 @@ class MessageDetailViewController: UIViewController {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             $0.leading.trailing.bottom.equalToSuperview()
         }
-    }
-    
-    private func setupNavigationItem(){
         
     }
 }

@@ -27,7 +27,7 @@
 		83D6059D2D352C6000BFCE9E /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6059C2D352C6000BFCE9E /* AppDIContainer.swift */; };
 		83D605A02D352D7A00BFCE9E /* LoginSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6059F2D352D7A00BFCE9E /* LoginSceneDIContainer.swift */; };
 		83D605A22D352E1500BFCE9E /* LoginFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605A12D352E1500BFCE9E /* LoginFlowCoordinator.swift */; };
-		83D605A52D352F6400BFCE9E /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605A42D352F6400BFCE9E /* CustomTabBarController.swift */; };
+		83D605A52D352F6400BFCE9E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605A42D352F6400BFCE9E /* MainTabBarController.swift */; };
 		83D605A92D352FFB00BFCE9E /* UIColor+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605A82D352FFB00BFCE9E /* UIColor+init.swift */; };
 		83D605B02D3532C900BFCE9E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605AF2D3532C900BFCE9E /* LoginViewController.swift */; };
 		83D605B22D3532D700BFCE9E /* LockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605B12D3532D700BFCE9E /* LockViewController.swift */; };
@@ -40,6 +40,9 @@
 		83D605C32D3554B000BFCE9E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 83D605C22D3554B000BFCE9E /* SnapKit */; };
 		BCCDB16C2D35F62F0094661E /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCDB16B2D35F62F0094661E /* Design.swift */; };
 		BCCDB16E2D35F7490094661E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BCCDB16D2D35F7490094661E /* Localizable.xcstrings */; };
+		BCD4716C2D3A175B004BC5C0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4716B2D3A175B004BC5C0 /* Message.swift */; };
+		BCD4716E2D3A3F0D004BC5C0 /* SettingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4716D2D3A3F0D004BC5C0 /* SettingMainViewController.swift */; };
+		BCD471702D3A4648004BC5C0 /* ScreenLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4716F2D3A4648004BC5C0 /* ScreenLockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +87,7 @@
 		83D6059C2D352C6000BFCE9E /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		83D6059F2D352D7A00BFCE9E /* LoginSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneDIContainer.swift; sourceTree = "<group>"; };
 		83D605A12D352E1500BFCE9E /* LoginFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowCoordinator.swift; sourceTree = "<group>"; };
-		83D605A42D352F6400BFCE9E /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		83D605A42D352F6400BFCE9E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		83D605A82D352FFB00BFCE9E /* UIColor+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+init.swift"; sourceTree = "<group>"; };
 		83D605AF2D3532C900BFCE9E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83D605B12D3532D700BFCE9E /* LockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +99,9 @@
 		83D605BE2D35544800BFCE9E /* UIStackView+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+init.swift"; sourceTree = "<group>"; };
 		BCCDB16B2D35F62F0094661E /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		BCCDB16D2D35F7490094661E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		BCD4716B2D3A175B004BC5C0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		BCD4716D2D3A3F0D004BC5C0 /* SettingMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingMainViewController.swift; path = PushMessenger/Domain/Entities/SettingMainViewController.swift; sourceTree = SOURCE_ROOT; };
+		BCD4716F2D3A4648004BC5C0 /* ScreenLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScreenLockViewController.swift; path = PushMessenger/Domain/Entities/ScreenLockViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 		83D605822D35282300BFCE9E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				BCD4716A2D3A1745004BC5C0 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -294,6 +301,7 @@
 		83D6059A2D352B9800BFCE9E /* SettingMain */ = {
 			isa = PBXGroup;
 			children = (
+				BCD4716D2D3A3F0D004BC5C0 /* SettingMainViewController.swift */,
 			);
 			path = SettingMain;
 			sourceTree = "<group>";
@@ -301,6 +309,7 @@
 		83D6059B2D352BA600BFCE9E /* ScreenLock */ = {
 			isa = PBXGroup;
 			children = (
+				BCD4716F2D3A4648004BC5C0 /* ScreenLockViewController.swift */,
 			);
 			path = ScreenLock;
 			sourceTree = "<group>";
@@ -318,7 +327,7 @@
 		83D605A32D352F4300BFCE9E /* Inheritances */ = {
 			isa = PBXGroup;
 			children = (
-				83D605A42D352F6400BFCE9E /* CustomTabBarController.swift */,
+				83D605A42D352F6400BFCE9E /* MainTabBarController.swift */,
 			);
 			path = Inheritances;
 			sourceTree = "<group>";
@@ -364,6 +373,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCD4716A2D3A1745004BC5C0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4716B2D3A175B004BC5C0 /* Message.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +526,7 @@
 				83D605BD2D353D8400BFCE9E /* LockViewModel.swift in Sources */,
 				83D605952D352B2C00BFCE9E /* MessageFlowCoordinator.swift in Sources */,
 				83D605532D3527F600BFCE9E /* MessageListViewController.swift in Sources */,
+				BCD471702D3A4648004BC5C0 /* ScreenLockViewController.swift in Sources */,
 				83D6054F2D3527F600BFCE9E /* AppDelegate.swift in Sources */,
 				83D605B62D35369A00BFCE9E /* MessageDetailViewController.swift in Sources */,
 				83D605592D3527F600BFCE9E /* PushMessenger.xcdatamodeld in Sources */,
@@ -516,15 +534,17 @@
 				BCCDB16C2D35F62F0094661E /* Design.swift in Sources */,
 				83D605882D35299B00BFCE9E /* MessageSceneDIContainer.swift in Sources */,
 				83D605972D352B3B00BFCE9E /* SettingFlowCoordinator.swift in Sources */,
-				83D605A52D352F6400BFCE9E /* CustomTabBarController.swift in Sources */,
+				83D605A52D352F6400BFCE9E /* MainTabBarController.swift in Sources */,
 				83D6058C2D3529CA00BFCE9E /* AppFlowCoordinator.swift in Sources */,
 				83D605A22D352E1500BFCE9E /* LoginFlowCoordinator.swift in Sources */,
 				83D6058A2D3529AA00BFCE9E /* SettingSceneDIContainer.swift in Sources */,
+				BCD4716E2D3A3F0D004BC5C0 /* SettingMainViewController.swift in Sources */,
 				83D605B02D3532C900BFCE9E /* LoginViewController.swift in Sources */,
 				83D605B42D35349800BFCE9E /* MessageListViewModel.swift in Sources */,
 				8300AA2C2D3688E500C26475 /* String+Extension.swift in Sources */,
 				83D605912D352A3300BFCE9E /* StoryboardInstantiable.swift in Sources */,
 				83D6058E2D3529E700BFCE9E /* AppConfigurations.swift in Sources */,
+				BCD4716C2D3A175B004BC5C0 /* Message.swift in Sources */,
 				83D605A92D352FFB00BFCE9E /* UIColor+init.swift in Sources */,
 				83D605B82D3536A800BFCE9E /* MessageDetailViewModel.swift in Sources */,
 				8300AA292D3677DB00C26475 /* LoginViewController+Preview.swift in Sources */,
