@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		8300AA292D3677DB00C26475 /* LoginViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300AA282D3677DB00C26475 /* LoginViewController+Preview.swift */; };
 		8300AA2C2D3688E500C26475 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300AA2B2D3688E500C26475 /* String+Extension.swift */; };
+		83BE42962D3BB42000747D3F /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE42952D3BB42000747D3F /* SetPasswordViewController.swift */; };
+		83BE429A2D3BB4CA00747D3F /* NotiSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE42992D3BB4CA00747D3F /* NotiSettingViewController.swift */; };
+		83BE429C2D3BB4E000747D3F /* NotiChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE429B2D3BB4E000747D3F /* NotiChangeViewController.swift */; };
+		83BE429E2D3BB4EE00747D3F /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE429D2D3BB4EE00747D3F /* AppInfoViewController.swift */; };
+		83BE42A02D3BB4FC00747D3F /* AppInfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE429F2D3BB4FC00747D3F /* AppInfoDetailViewController.swift */; };
+		83BE42A22D3BB58800747D3F /* SettingMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE42A12D3BB58800747D3F /* SettingMainViewModel.swift */; };
+		83BE42A42D3BB82B00747D3F /* NotiSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE42A32D3BB82B00747D3F /* NotiSettingViewModel.swift */; };
+		83BE42A62D3BB8FB00747D3F /* LockSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE42A52D3BB8FB00747D3F /* LockSettingViewModel.swift */; };
+		83BE42A82D3BB90E00747D3F /* AppInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE42A72D3BB90E00747D3F /* AppInfoViewModel.swift */; };
 		83D6054F2D3527F600BFCE9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6054E2D3527F600BFCE9E /* AppDelegate.swift */; };
 		83D605532D3527F600BFCE9E /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D605522D3527F600BFCE9E /* MessageListViewController.swift */; };
 		83D605592D3527F600BFCE9E /* PushMessenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83D605572D3527F600BFCE9E /* PushMessenger.xcdatamodeld */; };
@@ -65,6 +74,15 @@
 /* Begin PBXFileReference section */
 		8300AA282D3677DB00C26475 /* LoginViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Preview.swift"; sourceTree = "<group>"; };
 		8300AA2B2D3688E500C26475 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		83BE42952D3BB42000747D3F /* SetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SetPasswordViewController.swift; path = PushMessenger/Util/SetPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
+		83BE42992D3BB4CA00747D3F /* NotiSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiSettingViewController.swift; sourceTree = "<group>"; };
+		83BE429B2D3BB4E000747D3F /* NotiChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiChangeViewController.swift; sourceTree = "<group>"; };
+		83BE429D2D3BB4EE00747D3F /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
+		83BE429F2D3BB4FC00747D3F /* AppInfoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoDetailViewController.swift; sourceTree = "<group>"; };
+		83BE42A12D3BB58800747D3F /* SettingMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingMainViewModel.swift; path = PushMessenger/Presentation/SettingScene/AppInfo/SettingMainViewModel.swift; sourceTree = SOURCE_ROOT; };
+		83BE42A32D3BB82B00747D3F /* NotiSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiSettingViewModel.swift; sourceTree = "<group>"; };
+		83BE42A52D3BB8FB00747D3F /* LockSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LockSettingViewModel.swift; path = PushMessenger/Presentation/SettingScene/NotiSetting/LockSettingViewModel.swift; sourceTree = SOURCE_ROOT; };
+		83BE42A72D3BB90E00747D3F /* AppInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewModel.swift; sourceTree = "<group>"; };
 		83D6054B2D3527F600BFCE9E /* PushMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D6054E2D3527F600BFCE9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D605522D3527F600BFCE9E /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +154,26 @@
 				8300AA2B2D3688E500C26475 /* String+Extension.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		83BE42972D3BB44200747D3F /* NotiSetting */ = {
+			isa = PBXGroup;
+			children = (
+				83BE42992D3BB4CA00747D3F /* NotiSettingViewController.swift */,
+				83BE429B2D3BB4E000747D3F /* NotiChangeViewController.swift */,
+				83BE42A32D3BB82B00747D3F /* NotiSettingViewModel.swift */,
+			);
+			path = NotiSetting;
+			sourceTree = "<group>";
+		};
+		83BE42982D3BB45A00747D3F /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				83BE429D2D3BB4EE00747D3F /* AppInfoViewController.swift */,
+				83BE429F2D3BB4FC00747D3F /* AppInfoDetailViewController.swift */,
+				83BE42A72D3BB90E00747D3F /* AppInfoViewModel.swift */,
+			);
+			path = AppInfo;
 			sourceTree = "<group>";
 		};
 		83D605422D3527F600BFCE9E = {
@@ -264,8 +302,10 @@
 			isa = PBXGroup;
 			children = (
 				83D605962D352B3B00BFCE9E /* SettingFlowCoordinator.swift */,
-				83D6059B2D352BA600BFCE9E /* ScreenLock */,
 				83D6059A2D352B9800BFCE9E /* SettingMain */,
+				83D6059B2D352BA600BFCE9E /* LockSetting */,
+				83BE42972D3BB44200747D3F /* NotiSetting */,
+				83BE42982D3BB45A00747D3F /* AppInfo */,
 			);
 			path = SettingScene;
 			sourceTree = "<group>";
@@ -302,16 +342,19 @@
 			isa = PBXGroup;
 			children = (
 				BCD4716D2D3A3F0D004BC5C0 /* SettingMainViewController.swift */,
+				83BE42A12D3BB58800747D3F /* SettingMainViewModel.swift */,
 			);
 			path = SettingMain;
 			sourceTree = "<group>";
 		};
-		83D6059B2D352BA600BFCE9E /* ScreenLock */ = {
+		83D6059B2D352BA600BFCE9E /* LockSetting */ = {
 			isa = PBXGroup;
 			children = (
 				BCD4716F2D3A4648004BC5C0 /* ScreenLockViewController.swift */,
+				83BE42952D3BB42000747D3F /* SetPasswordViewController.swift */,
+				83BE42A52D3BB8FB00747D3F /* LockSettingViewModel.swift */,
 			);
-			path = ScreenLock;
+			path = LockSetting;
 			sourceTree = "<group>";
 		};
 		83D6059E2D352D6200BFCE9E /* LoginScene */ = {
@@ -530,24 +573,33 @@
 				83D6054F2D3527F600BFCE9E /* AppDelegate.swift in Sources */,
 				83D605B62D35369A00BFCE9E /* MessageDetailViewController.swift in Sources */,
 				83D605592D3527F600BFCE9E /* PushMessenger.xcdatamodeld in Sources */,
+				83BE42A02D3BB4FC00747D3F /* AppInfoDetailViewController.swift in Sources */,
 				83D605A02D352D7A00BFCE9E /* LoginSceneDIContainer.swift in Sources */,
 				BCCDB16C2D35F62F0094661E /* Design.swift in Sources */,
 				83D605882D35299B00BFCE9E /* MessageSceneDIContainer.swift in Sources */,
 				83D605972D352B3B00BFCE9E /* SettingFlowCoordinator.swift in Sources */,
+				83BE429A2D3BB4CA00747D3F /* NotiSettingViewController.swift in Sources */,
 				83D605A52D352F6400BFCE9E /* MainTabBarController.swift in Sources */,
+				83BE42A62D3BB8FB00747D3F /* LockSettingViewModel.swift in Sources */,
+				83BE42962D3BB42000747D3F /* SetPasswordViewController.swift in Sources */,
 				83D6058C2D3529CA00BFCE9E /* AppFlowCoordinator.swift in Sources */,
 				83D605A22D352E1500BFCE9E /* LoginFlowCoordinator.swift in Sources */,
+				83BE42A22D3BB58800747D3F /* SettingMainViewModel.swift in Sources */,
 				83D6058A2D3529AA00BFCE9E /* SettingSceneDIContainer.swift in Sources */,
 				BCD4716E2D3A3F0D004BC5C0 /* SettingMainViewController.swift in Sources */,
 				83D605B02D3532C900BFCE9E /* LoginViewController.swift in Sources */,
 				83D605B42D35349800BFCE9E /* MessageListViewModel.swift in Sources */,
 				8300AA2C2D3688E500C26475 /* String+Extension.swift in Sources */,
 				83D605912D352A3300BFCE9E /* StoryboardInstantiable.swift in Sources */,
+				83BE429C2D3BB4E000747D3F /* NotiChangeViewController.swift in Sources */,
 				83D6058E2D3529E700BFCE9E /* AppConfigurations.swift in Sources */,
 				BCD4716C2D3A175B004BC5C0 /* Message.swift in Sources */,
 				83D605A92D352FFB00BFCE9E /* UIColor+init.swift in Sources */,
+				83BE429E2D3BB4EE00747D3F /* AppInfoViewController.swift in Sources */,
+				83BE42A82D3BB90E00747D3F /* AppInfoViewModel.swift in Sources */,
 				83D605B82D3536A800BFCE9E /* MessageDetailViewModel.swift in Sources */,
 				8300AA292D3677DB00C26475 /* LoginViewController+Preview.swift in Sources */,
+				83BE42A42D3BB82B00747D3F /* NotiSettingViewModel.swift in Sources */,
 				83D605BB2D353D7900BFCE9E /* LoginViewModel.swift in Sources */,
 				83D605BF2D35544800BFCE9E /* UIStackView+init.swift in Sources */,
 			);

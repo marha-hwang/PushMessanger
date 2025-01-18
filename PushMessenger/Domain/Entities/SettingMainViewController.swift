@@ -9,9 +9,12 @@ import Foundation
 import UIKit
 
 class SettingMainViewController: UIViewController {
+    
+    private var viewModel:SettingMainViewModel!
 
-    static func create() -> SettingMainViewController {
-            let vc = SettingMainViewController()
+    static func create(with viewModel:SettingMainViewModel) -> SettingMainViewController {
+        let vc = SettingMainViewController()
+        vc.viewModel = viewModel
         return vc
     }
     

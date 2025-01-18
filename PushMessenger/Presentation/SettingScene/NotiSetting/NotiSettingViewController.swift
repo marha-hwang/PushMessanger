@@ -1,5 +1,5 @@
 //
-//  ScreenLockViewController.swift
+//  SettingMainViewController.swift
 //  PushMessenger
 //
 //  Created by h2o on 2025/01/17.
@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-class ScreenLockViewController: UIViewController {
-
-    private var viewModel:LockSettingViewModel!
+class NotiSettingViewController: UIViewController {
     
-    static func create(with viewModel:LockSettingViewModel) -> ScreenLockViewController {
-        let vc = ScreenLockViewController()
+    private var viewModel:SettingMainViewModel!
+
+    static func create(with viewModel:SettingMainViewModel) -> NotiSettingViewController {
+        let vc = SettingMainViewController()
         vc.viewModel = viewModel
         return vc
     }
@@ -26,7 +26,7 @@ class ScreenLockViewController: UIViewController {
         let outer:UIStackView = {
             let outer = UIStackView(axis: .vertical, distribution: .equalSpacing, alignment: .center)
             
-            outer.backgroundColor = .red
+            outer.backgroundColor = .blue
             
             return outer
         }()
@@ -38,5 +38,13 @@ class ScreenLockViewController: UIViewController {
             $0.leading.trailing.bottom.equalToSuperview()
         }
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showMainSetting))
+        outer.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func showMainSetting() {
+        let vc = ScreenLockViewController.create()
+        NSLog("잠금설정이동")
+        navigationController?.pushViewController(vc, animated: false)
     }
 }
