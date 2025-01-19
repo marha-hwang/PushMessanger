@@ -20,8 +20,9 @@ class ScreenLockViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
         view.backgroundColor = Design.commonColor
+        
+        navigationItem.title = "set_screen_lock".localized()
         
         let outer:UIStackView = {
             let outer = UIStackView(axis: .vertical, distribution: .equalSpacing, alignment: .center)

@@ -10,18 +10,19 @@ import UIKit
 
 class NotiSettingViewController: UIViewController {
     
-    private var viewModel:SettingMainViewModel!
+    private var viewModel:NotiSettingViewModel!
 
-    static func create(with viewModel:SettingMainViewModel) -> NotiSettingViewController {
-        let vc = SettingMainViewController()
+    static func create(with viewModel:NotiSettingViewModel) -> NotiSettingViewController {
+        let vc = NotiSettingViewController()
         vc.viewModel = viewModel
         return vc
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
         view.backgroundColor = Design.commonColor
+        
+        navigationItem.title = "set_notification_sound".localized()
         
         let outer:UIStackView = {
             let outer = UIStackView(axis: .vertical, distribution: .equalSpacing, alignment: .center)
@@ -38,13 +39,5 @@ class NotiSettingViewController: UIViewController {
             $0.leading.trailing.bottom.equalToSuperview()
         }
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showMainSetting))
-        outer.addGestureRecognizer(tapGesture)
-    }
-    
-    @objc func showMainSetting() {
-        let vc = ScreenLockViewController.create()
-        NSLog("잠금설정이동")
-        navigationController?.pushViewController(vc, animated: false)
     }
 }
