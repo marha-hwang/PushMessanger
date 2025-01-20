@@ -10,6 +10,7 @@ import UIKit
 class MessageListViewController: UIViewController {
 
     private var viewModel: MessageListViewModel!
+    let messageListTableViewController = MessageListTableViewController()
     
     static func create(with viewModel:MessageListViewModel) -> MessageListViewController {
         let vc = MessageListViewController()
@@ -19,26 +20,37 @@ class MessageListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         view.backgroundColor = Design.commonColor
         
-        let temp = UIStackView(axis: .horizontal, distribution: .equalSpacing, alignment: .bottom)
-        temp.backgroundColor = .white
-        
-        view.addSubview(temp)
-        
-        temp.snp.makeConstraints{
-            $0.top.bottom.leading.trailing.equalTo(view.safeAreaLayoutGuide)
-        }
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tapGesture)
-        
+        setupViews()
+        prepareSubViewController()
     }
     
-    @objc func dismissKeyboard() {
-        viewModel.showDetail()
+    private func setupViews(){
+        let messageListContainer:UIView = {
+            let messageListContainer = UIView()
+            messageListContainer.translatesAutoresizingMaskIntoConstraints = false
+            messageListContainer.backgroundColor = .white
+            
+            messageListContainer.addSubview(messageListTableViewController.tableView)
+            
+            messageListTableViewController.tableView.snp.makeConstraints{
+                $0.top.bottom.leading.trailing.equalToSuperview()
+            }
+            
+            return messageListContainer
+        }()
+        
+        view.addSubview(messageListContainer)
+        
+        messageListContainer.snp.makeConstraints{
+            $0.top.bottom.leading.trailing.equalTo(view.safeAreaLayoutGuide)
+        }
+    }
+    
+    private func prepareSubViewController(){
+        addChild(messageListTableViewController)
+        messageListTableViewController.viewModel = viewModel
     }
 }
 

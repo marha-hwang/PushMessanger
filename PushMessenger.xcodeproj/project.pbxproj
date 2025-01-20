@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8300AA292D3677DB00C26475 /* LoginViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300AA282D3677DB00C26475 /* LoginViewController+Preview.swift */; };
 		8300AA2C2D3688E500C26475 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300AA2B2D3688E500C26475 /* String+Extension.swift */; };
+		83B46F192D3E765700041973 /* MessageListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B46F182D3E765700041973 /* MessageListTableViewController.swift */; };
+		83B46F1B2D3E7AF600041973 /* MessageListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B46F1A2D3E7AF600041973 /* MessageListItemCell.swift */; };
 		83BE42962D3BB42000747D3F /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE42952D3BB42000747D3F /* SetPasswordViewController.swift */; };
 		83BE429A2D3BB4CA00747D3F /* NotiSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE42992D3BB4CA00747D3F /* NotiSettingViewController.swift */; };
 		83BE429C2D3BB4E000747D3F /* NotiChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE429B2D3BB4E000747D3F /* NotiChangeViewController.swift */; };
@@ -74,6 +76,8 @@
 /* Begin PBXFileReference section */
 		8300AA282D3677DB00C26475 /* LoginViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Preview.swift"; sourceTree = "<group>"; };
 		8300AA2B2D3688E500C26475 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		83B46F182D3E765700041973 /* MessageListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewController.swift; sourceTree = "<group>"; };
+		83B46F1A2D3E7AF600041973 /* MessageListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListItemCell.swift; sourceTree = "<group>"; };
 		83BE42952D3BB42000747D3F /* SetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SetPasswordViewController.swift; path = PushMessenger/Util/SetPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		83BE42992D3BB4CA00747D3F /* NotiSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiSettingViewController.swift; sourceTree = "<group>"; };
 		83BE429B2D3BB4E000747D3F /* NotiChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiChangeViewController.swift; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 			children = (
 				83D605522D3527F600BFCE9E /* MessageListViewController.swift */,
 				83D605B32D35349800BFCE9E /* MessageListViewModel.swift */,
+				83B46F182D3E765700041973 /* MessageListTableViewController.swift */,
+				83B46F1A2D3E7AF600041973 /* MessageListItemCell.swift */,
 			);
 			path = MessageList;
 			sourceTree = "<group>";
@@ -568,6 +574,7 @@
 				83D605B22D3532D700BFCE9E /* LockViewController.swift in Sources */,
 				83D605BD2D353D8400BFCE9E /* LockViewModel.swift in Sources */,
 				83D605952D352B2C00BFCE9E /* MessageFlowCoordinator.swift in Sources */,
+				83B46F1B2D3E7AF600041973 /* MessageListItemCell.swift in Sources */,
 				83D605532D3527F600BFCE9E /* MessageListViewController.swift in Sources */,
 				BCD471702D3A4648004BC5C0 /* ScreenLockViewController.swift in Sources */,
 				83D6054F2D3527F600BFCE9E /* AppDelegate.swift in Sources */,
@@ -583,6 +590,7 @@
 				83BE42A62D3BB8FB00747D3F /* LockSettingViewModel.swift in Sources */,
 				83BE42962D3BB42000747D3F /* SetPasswordViewController.swift in Sources */,
 				83D6058C2D3529CA00BFCE9E /* AppFlowCoordinator.swift in Sources */,
+				83B46F192D3E765700041973 /* MessageListTableViewController.swift in Sources */,
 				83D605A22D352E1500BFCE9E /* LoginFlowCoordinator.swift in Sources */,
 				83BE42A22D3BB58800747D3F /* SettingMainViewModel.swift in Sources */,
 				83D6058A2D3529AA00BFCE9E /* SettingSceneDIContainer.swift in Sources */,
